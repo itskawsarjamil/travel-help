@@ -140,13 +140,13 @@ document.getElementById("search-btn").addEventListener("click",function(){
 document.getElementById("search-btn2").addEventListener("click",function(){
     //its not working
     console.log('nav search');
-    const value=document.getElementById("search-value2").value;
+    const value2=document.getElementById("search-value2").value;
     document.getElementById("search-value2").value='';
-    console.log(value);
+    console.log(value2);
     document.getElementById("card-container").innerHTML='';
     for(let service of services)
     {
-        if(service.vehicle.toLowerCase()==value.toLowerCase())
+        if(service.vehicle.toLowerCase()==value2.toLowerCase())
         {
             displayService(service);
         }
